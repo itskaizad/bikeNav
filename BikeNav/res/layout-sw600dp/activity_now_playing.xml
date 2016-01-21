@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    style="?attr/backgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/shufflebackground"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        style="?attr/backgroundAccentColor">
+
+        <ImageButton
+            android:id="@+id/shuffle"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:contentDescription="@string/shuffle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shuffleselectable" />
+
+       <ImageButton
+            android:id="@+id/jumpback"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:contentDescription="@string/jumpback"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_rewind20" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        style="?attr/backgroundColor">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        style="?attr/backgroundColor" >
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="?attr/nowPlayingSongInfoTextSize"
+             />
+
+        <TextView
+            android:id="@+id/albumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artistName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="?attr/nowPlayingSongInfoTextSize"
+             />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="?attr/nowPlayingSongTextSize"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        style="?attr/backgroundColor" >
+        
+        <TextView
+            android:id="@+id/songProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="12dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="?attr/nowPlayingSongInfoTextSize"
+            />
+   	</RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        style="?attr/backgroundColor" >
+
+        <SeekBar
+            android:id="@+id/songProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/spacer1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        style="?attr/backgroundAccentColor" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/playpausepreviousbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        style="?attr/backgroundAccentColor" >
+
+        <ImageButton
+            android:id="@+id/playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_action_play"
+            android:contentDescription="@string/play"
+            android:scaleType="fitCenter"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/play" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/playPause"
+            android:layout_toLeftOf="@id/playPause"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/ic_action_previous"
+            android:contentDescription="@string/previous"
+            android:scaleType="fitCenter"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/previous" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/playPause"
+            android:layout_toRightOf="@id/playPause"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/ic_action_next"
+            android:contentDescription="@string/next"
+            android:scaleType="fitCenter"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/next" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/spacer2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        style="?attr/backgroundAccentColor" >
+    </LinearLayout>
+
+</LinearLayout>

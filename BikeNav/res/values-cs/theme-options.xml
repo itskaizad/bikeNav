@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="themeoptions">
+        <item>Světlý</item>
+        <item>Tmavý</item>
+    </string-array>
+    <string-array
+        name="textsizeoptions">
+        <item>Malý</item>
+        <item>Střední</item>
+        <item>Velký</item>
+    </string-array>
+    <string-array
+        name="accentcoloroptions">
+        <item>Šedá</item>
+        <item>Černozelená</item>
+        <item>Briliantově modrá</item>
+        <item>Briliantově oranžová</item>
+        <item>Smaragdová</item>
+        <item>Slonovinová</item>
+        <item>Nebesky modrá</item>
+        <item>Zelená</item>
+        <item>Modrá</item>
+        <item>Vlastní</item>
+    </string-array>
+</resources>

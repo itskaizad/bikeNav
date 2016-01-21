@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="themeoptions">
+        <item>Hell</item>
+        <item>Dunkel</item>
+    </string-array>
+    <string-array
+        name="textsizeoptions">
+        <item>Klein</item>
+        <item>Mittel</item>
+        <item>Groß</item>
+    </string-array>
+    <string-array
+        name="accentcoloroptions">
+        <item>Grau</item>
+        <item>Grün</item>
+        <item>Blau</item>
+        <item>Orange</item>
+        <item>Smaragd</item>
+        <item>Elfenbein</item>
+        <item>Himmel</item>
+        <item>Verkehrsgrün</item>
+        <item>Wasserblau</item>
+        <item>Benutzerdefiniert</item>
+    </string-array>
+</resources>

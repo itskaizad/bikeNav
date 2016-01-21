@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	style="?attr/backgroundColor"
+	>
+	
+	<ListView android:id="@+id/songListView"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="4"
+		android:layout_gravity="top"
+		android:dividerHeight="1dp"
+		style="?attr/dividerColor"
+	/>
+	
+</LinearLayout>
